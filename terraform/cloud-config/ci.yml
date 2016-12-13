@@ -2,7 +2,7 @@
 # Cloud config for application servers 
 
 runcmd:
-  - init_role=jenkinsmaster
+  - init_role=jenkins
   - init_env=dev
   - init_repouser=neilmillard
   - init_reponame=server-provisioning
