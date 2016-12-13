@@ -6,6 +6,7 @@ resource "aws_instance" "CI" {
   security_groups   = ["${var.aws_SG_interviewuser1}"]
   source_dest_check = false
   user_data         = "${file("cloud-config/ci.yml")}"
+  key_name          = "interviewUser1"
   tags              = {
                     Name = "CI server"
   }
