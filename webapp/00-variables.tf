@@ -30,6 +30,7 @@ variable "aws_subnet_public" {
   name = "interviewUser1_SN_Public"
 }
 
+variable "aws_" {}
 /* amis by region */
 variable "amis" {
   description = "Base AMI to launch the instances with"
