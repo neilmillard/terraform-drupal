@@ -4,7 +4,7 @@
 runcmd:
   - init_role=jenkinsmaster
   - init_env=dev
-  - init_repouser=mitese
+  - init_repouser=neilmillard
   - init_reponame=server-provisioning
   - init_repobranch=master
   - init_configbucket=https://s3-us-ease-1.amazonaws.com/config.intview1
@@ -17,5 +17,6 @@ runcmd:
 
   - cd /opt/
   - git clone https://github.com/neilmillard/mitese-boot.git
-  - chmod a+x /opt/provision.sh
+  - cd mitese-boot
+  - chmod a+x provision.sh
   - ./provision.sh --role ${init_role} --environment ${init_env} --repouser ${init_repouser} --reponame ${init_reponame} --repobranch ${init_repobranch}
