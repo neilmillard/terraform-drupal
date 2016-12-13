@@ -46,5 +46,5 @@ crashlytics-build.properties
 fabric.properties
 
 /private/
-/ci/terraform.tfvars
 /webapp/terraform.tfvars
+/terraform/terraform.tfvars

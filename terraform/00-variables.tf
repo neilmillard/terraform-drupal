@@ -30,6 +30,10 @@ variable "aws_subnet_public" {
   name = "interviewUser1_SN_Public"
 }
 
+variable "aws_SG_interviewuser1" {
+  default = "sg-b12d55cc"
+}
+
 /* amis by region */
 variable "amis" {
   description = "Base AMI to launch the instances with"
